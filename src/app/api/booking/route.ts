@@ -151,7 +151,7 @@ export async function POST(request: Request) {
 
     const mailOptions = {
       from: `"${fullName || "S&R Booking"}" <${user}>`,
-      to: "mehedi@axionexasolutions.com",
+      to: "info@sandrengines.co.uk",
       subject: `[Booking Request] ${serviceName} - ${fullName || regNumber}`,
       text: `
         New Booking Request from ${fullName || "Not Provided"}

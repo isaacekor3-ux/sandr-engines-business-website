@@ -103,7 +103,7 @@ export async function POST(request: Request) {
 
     const mailOptions = {
       from: `"${name}" <${user}>`,
-      to: "mehedi@axionexasolutions.com",
+      to: "info@sandrengines.co.uk",
       replyTo: email,
       subject: `[Contact Inquiry] ${subject} - ${name}`,
       text: `
