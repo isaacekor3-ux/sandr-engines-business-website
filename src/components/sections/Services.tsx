@@ -77,10 +77,22 @@ export default function Services() {
       hoverBg: "hover:bg-green-500/[0.03] dark:hover:bg-green-500/[0.08] hover:border-green-500/30",
     },
     {
-      title: "Selling safe and reliable vehicles",
-      icon: Car,
-      color: "from-pink-500/10 to-rose-500/10 text-secondary dark:text-pink-400",
-      hoverBg: "hover:bg-secondary/[0.03] dark:hover:bg-secondary/[0.08] hover:border-secondary/30",
+      title: "Car Headlight Restoration and Polish",
+      icon: Sparkles,
+      color: "from-yellow-500/10 to-amber-500/10 text-yellow-600 dark:text-yellow-400",
+      hoverBg: "hover:bg-yellow-500/[0.03] dark:hover:bg-yellow-500/[0.08] hover:border-yellow-500/30",
+    },
+    {
+      title: "Air-conditioning Regas and Service",
+      icon: Wind,
+      color: "from-cyan-500/10 to-blue-500/10 text-cyan-600 dark:text-cyan-400",
+      hoverBg: "hover:bg-cyan-500/[0.03] dark:hover:bg-cyan-500/[0.08] hover:border-cyan-500/30",
+    },
+    {
+      title: "Tyre Repair",
+      icon: Wrench,
+      color: "from-zinc-500/10 to-slate-500/10 text-zinc-600 dark:text-zinc-400",
+      hoverBg: "hover:bg-zinc-500/[0.03] dark:hover:bg-zinc-500/[0.08] hover:border-zinc-500/30",
     },
   ];
 

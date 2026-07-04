@@ -202,6 +202,9 @@ function BookingForm() {
     "Brake Service & Repairs",
     "Suspension & Steering Repairs",
     "Engine Servicing & Maintenance",
+    "Car Headlight Restoration and Polish",
+    "Air-conditioning Regas and Service",
+    "Tyre Repair",
     "General Vehicle Repairs",
     "Other Mechanical Issue"
   ];

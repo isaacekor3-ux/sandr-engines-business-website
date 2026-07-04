@@ -51,6 +51,27 @@ export default function Gallery() {
       category: "Component Sweep",
       description: "Analyzing real-time sensor signals using a digital oscilloscope to trace wiring faults.",
     },
+    {
+      src: "/assets/gallery/gallery-7.jpeg",
+      type: "image",
+      title: "Precision Mechanical Overhaul",
+      category: "Engine Repairs",
+      description: "Complete mechanical breakdown and repair of complex block assemblies.",
+    },
+    {
+      src: "/assets/gallery/gallery-8.mp4",
+      type: "video",
+      title: "Exhaust Emission Analysis",
+      category: "Diagnostics & MOT",
+      description: "Measuring emission compound density to optimize combustion performance.",
+    },
+    {
+      src: "/assets/gallery/gallery-9.jpeg",
+      type: "image",
+      title: "Chassis & Brake Alignment",
+      category: "Safety Checks",
+      description: "Laser aligning components for maximum road adherence and braking reliability.",
+    },
   ];
 
   const handlePrev = (e: React.MouseEvent) => {

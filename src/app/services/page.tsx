@@ -34,8 +34,7 @@ export default function ServicesPage() {
     "All",
     "Diagnostics & Electrical",
     "Maintenance & Servicing",
-    "Repairs & Tyres",
-    "Car Sales"
+    "Repairs & Tyres"
   ];
 
   const services = [
@@ -130,14 +129,34 @@ export default function ServicesPage() {
       highlights: ["150-Point Checklist", "Battery Telemetry Scan", "Fluid Top-Ups Included"]
     },
     {
-      title: "Selling safe and reliable vehicles",
-      category: "Car Sales",
-      icon: Car,
-      image: "/assets/services/car_sales.png",
-      color: "from-pink-500/10 to-rose-500/10 text-pink-600 dark:text-pink-400",
-      borderHover: "group-hover:border-pink-500/30",
-      description: "Browse our hand-picked inventory of fully inspected and certified pre-owned cars. Every vehicle is deep-cleaned, mechanically verified, and comes with a fresh MOT and detailed service history for complete peace of mind.",
-      highlights: ["HPI Clear Reports", "12-Month MOT Included", "Multi-Point Safety Inspected"]
+      title: "Car Headlight Restoration and Polish",
+      category: "Maintenance & Servicing",
+      icon: Sparkles,
+      image: "/assets/services/headlight_polishing.png",
+      color: "from-yellow-500/10 to-amber-500/10 text-yellow-600 dark:text-yellow-400",
+      borderHover: "group-hover:border-yellow-500/30",
+      description: "Restore clarity and brightness to your vehicle's headlights. We remove oxidation, yellowing, and minor scratches using professional wet-sanding and multi-stage polishing, followed by a UV-resistant sealant to prevent future fading.",
+      highlights: ["UV Protection Sealant", "Enhanced Night Visibility", "Sanding & Multi-Stage Polish"]
+    },
+    {
+      title: "Air-conditioning Regas and Service",
+      category: "Maintenance & Servicing",
+      icon: Wind,
+      image: "/assets/services/ac_service.png",
+      color: "from-cyan-500/10 to-blue-500/10 text-cyan-600 dark:text-cyan-400",
+      borderHover: "group-hover:border-cyan-500/30",
+      description: "Keep your cabin cool and fresh. We test for system leaks, evacuate old refrigerant oil, and regas with the correct R134a or R1234yf gas. Includes air-con system de-sanitisation to eliminate musty odours and bacteria.",
+      highlights: ["R134a & R1234yf Support", "Vacuum Leak Test", "System De-sanitisation"]
+    },
+    {
+      title: "Tyre Repair",
+      category: "Repairs & Tyres",
+      icon: Wrench,
+      image: "/assets/services/tyre_repairs.png",
+      color: "from-zinc-500/10 to-slate-500/10 text-zinc-600 dark:text-zinc-400",
+      borderHover: "group-hover:border-zinc-500/30",
+      description: "Safe and certified tyre puncture repairs in accordance with BS AU 159 standards. We inspect tread depth, repair minor tread punctures, perform wheel balancing, and adjust tyre pressures to optimize fuel economy and road safety.",
+      highlights: ["BS AU 159 Compliant", "Precision Wheel Balancing", "Pressure & Tread Check"]
     }
   ];
 

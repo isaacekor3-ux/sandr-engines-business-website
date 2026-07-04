@@ -41,6 +41,9 @@ export default function ContactPage() {
     "Brake Service & Repairs",
     "Suspension & Steering",
     "Engine Servicing & Maintenance",
+    "Car Headlight Restoration and Polish",
+    "Air-conditioning Regas and Service",
+    "Tyre Repair",
     "Other Mechanical Inquiry"
   ];
 
