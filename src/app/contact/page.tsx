@@ -153,11 +153,11 @@ export default function ContactPage() {
       icon: Mail,
       title: "Email Support",
       details: [
-        "sammechanics@hotmail.com",
+        "info@sandrengines.co.uk",
         "We aim to respond to all inquiries within 12 hours."
       ],
       linkText: "Send direct email",
-      linkUrl: "mailto:sammechanics@hotmail.com"
+      linkUrl: "mailto:info@sandrengines.co.uk"
     },
     {
       icon: Clock,
@@ -176,7 +176,7 @@ export default function ContactPage() {
     <>
       <Navbar />
       <main className="flex-grow bg-background transition-colors duration-300">
-        
+
         {/* Hero Section */}
         <section className="relative pt-28 pb-12 bg-section overflow-hidden">
           {/* Ambient light blobs */}
@@ -192,7 +192,7 @@ export default function ContactPage() {
             >
               Get in Touch
             </motion.span>
-            
+
             <motion.h1
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
@@ -204,7 +204,7 @@ export default function ContactPage() {
                 Engine & Diagnostics Garage
               </span>
             </motion.h1>
-            
+
             <motion.p
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
@@ -219,7 +219,7 @@ export default function ContactPage() {
         {/* Content Section */}
         <section className="py-12 max-w-7xl mx-auto px-4 md:px-2">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch">
-            
+
             {/* Left Column: Contact details cards */}
             <div className="lg:col-span-5 flex flex-col">
               <div className="mb-6 space-y-2">
@@ -227,7 +227,7 @@ export default function ContactPage() {
                   Our Contact Information
                 </h2>
                 <p className="text-sm text-body-text leading-relaxed">
-                  Visit our specialist center in Wolverhampton or reach out directly to check diagnostic calendar availability. 
+                  Visit our specialist center in Wolverhampton or reach out directly to check diagnostic calendar availability.
                 </p>
               </div>
 
@@ -277,7 +277,7 @@ export default function ContactPage() {
             {/* Right Column: Contact form card */}
             <div className="lg:col-span-7 flex flex-col">
               <div className="bg-card border border-border rounded-2xl p-6 sm:p-8 shadow-sm flex flex-col justify-between flex-grow h-full">
-                
+
                 <h3 className="text-xl font-bold text-heading dark:text-white mb-6 flex items-center gap-2">
                   <MessageSquare className="w-5 h-5 text-secondary" />
                   Send an Online Inquiry
@@ -305,9 +305,8 @@ export default function ContactPage() {
                             value={formData.name}
                             onChange={handleInputChange}
                             placeholder="e.g. John Smith"
-                            className={`w-full px-4 py-2.5 text-sm bg-section border ${
-                              errors.name ? "border-destructive" : "border-border"
-                            } rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary text-heading dark:text-white transition-all`}
+                            className={`w-full px-4 py-2.5 text-sm bg-section border ${errors.name ? "border-destructive" : "border-border"
+                              } rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary text-heading dark:text-white transition-all`}
                           />
                           {errors.name && (
                             <p className="text-[10px] text-destructive font-semibold flex items-center gap-1">
@@ -327,9 +326,8 @@ export default function ContactPage() {
                             value={formData.email}
                             onChange={handleInputChange}
                             placeholder="e.g. john@example.com"
-                            className={`w-full px-4 py-2.5 text-sm bg-section border ${
-                              errors.email ? "border-destructive" : "border-border"
-                            } rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary text-heading dark:text-white transition-all`}
+                            className={`w-full px-4 py-2.5 text-sm bg-section border ${errors.email ? "border-destructive" : "border-border"
+                              } rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary text-heading dark:text-white transition-all`}
                           />
                           {errors.email && (
                             <p className="text-[10px] text-destructive font-semibold flex items-center gap-1">
@@ -351,9 +349,8 @@ export default function ContactPage() {
                             value={formData.phone}
                             onChange={handleInputChange}
                             placeholder="e.g. +44 7911 123456"
-                            className={`w-full px-4 py-2.5 text-sm bg-section border ${
-                              errors.phone ? "border-destructive" : "border-border"
-                            } rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary text-heading dark:text-white transition-all`}
+                            className={`w-full px-4 py-2.5 text-sm bg-section border ${errors.phone ? "border-destructive" : "border-border"
+                              } rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary text-heading dark:text-white transition-all`}
                           />
                           {errors.phone && (
                             <p className="text-[10px] text-destructive font-semibold flex items-center gap-1">
@@ -408,9 +405,8 @@ export default function ContactPage() {
                           onChange={handleInputChange}
                           rows={4}
                           placeholder="Describe the issue with your vehicle, diagnostic scanner needs, or general repair quotes..."
-                          className={`w-full px-4 py-2.5 text-sm bg-section border ${
-                            errors.message ? "border-destructive" : "border-border"
-                          } rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary text-heading dark:text-white transition-all resize-none`}
+                          className={`w-full px-4 py-2.5 text-sm bg-section border ${errors.message ? "border-destructive" : "border-border"
+                            } rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary text-heading dark:text-white transition-all resize-none`}
                         />
                         {errors.message && (
                           <p className="text-[10px] text-destructive font-semibold flex items-center gap-1">

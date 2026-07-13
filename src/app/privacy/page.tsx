@@ -39,7 +39,7 @@ export default function PrivacyPolicy() {
       <Navbar />
       <main className="flex-grow bg-section dark:bg-slate-950 py-16 md:py-24 transition-colors duration-300">
         <div className="max-w-6xl mx-auto px-4 pt-9 sm:px-6">
-          
+
           {/* Back Button */}
           <Link
             href="/"
@@ -67,8 +67,8 @@ export default function PrivacyPolicy() {
             {sections.map((sec, idx) => {
               const Icon = sec.icon;
               return (
-                <div 
-                  key={idx} 
+                <div
+                  key={idx}
                   className="bg-card border border-border rounded-2xl p-6 sm:p-8 space-y-4 shadow-sm hover:shadow-md transition-all duration-300"
                 >
                   <div className="flex items-center gap-3">
@@ -91,7 +91,7 @@ export default function PrivacyPolicy() {
               <h2 className="text-lg sm:text-xl font-bold text-heading dark:text-white border-b border-border pb-3">
                 Detailed Policy Outline
               </h2>
-              
+
               <div className="space-y-4 text-sm text-body-text leading-relaxed">
                 <p>
                   <strong>Cookies & Website Telemetry:</strong> Our website uses cookies to store temporary scheduling data, secure form inputs, and track analytical visitor traffic. You can choose to disable cookies in your browser settings, though it may disrupt appointment scheduler modules.
@@ -100,7 +100,7 @@ export default function PrivacyPolicy() {
                   <strong>Video & Imagery Storage:</strong> HD video proof reports of diagnostic scans or physical component wear are securely uploaded to a cloud server using unique, unindexed hash links. These reports are kept for a maximum of 24 months to support warranty claims before being archived.
                 </p>
                 <p>
-                  <strong>Contacting Us:</strong> If you have any inquiries regarding your data security or wish to request data erasure, please contact us directly at <a href="mailto:sammechanics@hotmail.com" className="text-secondary hover:underline font-bold">sammechanics@hotmail.com</a>.
+                  <strong>Contacting Us:</strong> If you have any inquiries regarding your data security or wish to request data erasure, please contact us directly at <a href="mailto:info@sandrengines.co.uk" className="text-secondary hover:underline font-bold">info@sandrengines.co.uk</a>.
                 </p>
               </div>
             </div>

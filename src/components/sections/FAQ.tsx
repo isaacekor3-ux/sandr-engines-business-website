@@ -89,7 +89,7 @@ export default function FAQ() {
                   Book Diagnosis
                 </Button>
                 <a 
-                  href="tel:02081234567" 
+                  href="tel:+44 7454 055461" 
                   className="border border-border text-heading dark:text-white hover:bg-background text-xs font-bold py-2.5 px-5 rounded-xl inline-flex items-center justify-center gap-2 transition-all cursor-pointer bg-section"
                 >
                   <Phone className="w-3.5 h-3.5" />

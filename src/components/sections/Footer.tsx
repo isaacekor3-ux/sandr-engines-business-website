@@ -11,7 +11,7 @@ export default function Footer() {
   const handleScrollTo = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     const isHomePage = window.location.pathname === "/";
     const isHashLink = href.startsWith("#") || href.includes("#");
-    
+
     if (isHomePage && isHashLink) {
       e.preventDefault();
       const targetId = href.includes("#") ? href.split("#")[1] : href;
@@ -34,10 +34,10 @@ export default function Footer() {
   return (
     <footer id="contact" className="bg-[#0F172A] text-slate-400 pt-20 pb-8 border-t border-slate-800">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
-        
+
         {/* Upper footer grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 pb-16 border-b border-slate-800">
-          
+
           {/* Col 1: Logo & Info */}
           <div className="lg:col-span-4 flex flex-col space-y-6">
             <Link href="#hero" className="flex items-center gap-2 group self-start">
@@ -59,7 +59,7 @@ export default function Footer() {
                 </span>
               </div>
             </Link>
-            
+
             <p className="text-sm text-slate-400 leading-relaxed">
               Specialist diagnostics center and mechanical repair garage. We carry out coding, reprogramming, wiring, and mechanical overhauls for all major car brands.
             </p>
@@ -110,7 +110,7 @@ export default function Footer() {
           {/* Col 4: Contact & Location */}
           <div className="lg:col-span-3 flex flex-col space-y-4">
             <h4 className="text-sm font-bold text-white uppercase tracking-wider">Find Our Garage</h4>
-            
+
             <div className="space-y-2.5 text-sm">
               <div className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-secondary mt-0.5 flex-shrink-0" />
@@ -123,8 +123,8 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-2 pt-1.5">
                 <Mail className="w-4 h-4 text-secondary flex-shrink-0" />
-                <a href="mailto:sammechanics@hotmail.com" className="hover:text-white text-slate-300">
-                  sammechanics@hotmail.com
+                <a href="mailto:info@sandrengines.co.uk" className="hover:text-white text-slate-300">
+                  info@sandrengines.co.uk
                 </a>
               </div>
               <div className="flex items-center gap-2 pt-1.5">
