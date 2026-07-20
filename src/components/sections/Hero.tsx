@@ -186,7 +186,7 @@ export default function Hero() {
 
           {/* Graphics Showcase */}
           <div className="lg:col-span-5 relative w-full flex justify-center items-center mt-8 lg:mt-0 px-4 sm:px-6 lg:px-0">
-            <div className="relative w-full max-w-[420px] aspect-square lg:max-w-none">
+            <div className="relative w-full max-w-[380px] sm:max-w-[420px] lg:max-w-[440px] aspect-[3/4]">
               {/* Visual Container */}
               <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
@@ -195,7 +195,7 @@ export default function Hero() {
                 className="relative w-full h-full rounded-2xl overflow-hidden border border-border shadow-2xl bg-slate-900 group animate-float"
               >
                 <Image
-                  src="/hero-image-2.png"
+                  src="/hero.jpeg"
                   alt="Professional Mechanic Diagnosing Engine"
                   fill
                   priority
