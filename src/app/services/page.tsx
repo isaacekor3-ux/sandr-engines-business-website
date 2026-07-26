@@ -42,7 +42,8 @@ export default function ServicesPage() {
       title: "Engine Diagnostics",
       category: "Diagnostics & Electrical",
       icon: Cpu,
-      image: "/assets/services/engine_diagnostics.png",
+      image: "/assets/services/engines_diag.jpeg",
+
       color: "from-blue-500/10 to-indigo-500/10 text-blue-600 dark:text-blue-400",
       borderHover: "group-hover:border-blue-500/30",
       description: "Using dealer-level diagnostic scanners (BMW ISTA, Mercedes XENTRY, ODIS), we perform real-time sensor sweeps, live data logging, and module health scans to isolate electrical and electronic faults. We inspect ECU telemetry, map out wiring issues, and diagnose warning lights with scientific accuracy.",
@@ -82,7 +83,7 @@ export default function ServicesPage() {
       title: "Brake Service & Repairs",
       category: "Repairs & Tyres",
       icon: Disc,
-      image: "/assets/services/brake_repairs.png",
+      image: "/assets/services/brake_repair.jpeg",
       color: "from-rose-500/10 to-red-500/10 text-rose-600 dark:text-rose-400",
       borderHover: "group-hover:border-rose-500/30",
       description: "We replace worn brake pads and rotors (discs), flush system fluids, rebuild calipers, and adjust handbrakes. Using exclusively genuine OEM or matching high-grade components ensures responsive stopping power and prevents vibration or squeaking.",
@@ -284,7 +285,7 @@ export default function ServicesPage() {
                           alt={service.title}
                           fill
                           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                          className="object-cover transition-transform duration-500 group-hover:scale-105"
+                          className={`object-cover transition-transform duration-500 group-hover:scale-105 `}
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-90" />
                         

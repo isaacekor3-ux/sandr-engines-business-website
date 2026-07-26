@@ -93,14 +93,19 @@ export default function Hero() {
               </span>
             </motion.div>
 
-            {/* Main Heading */}
             <motion.h1
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-heading dark:text-white tracking-tight leading-[1.1]"
+              className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-[1.1]"
             >
-              S&R ENGINES & DIAGNOSTIC SAFE AND RELIABLE
+              <span className="text-red-500 dark:text-red-400">
+                S&R ENGINES & DIAGNOSTIC
+              </span>
+              <br />
+              <span className="text-blue-600 dark:tekext-blue-400">
+                SAFE AND RELIABLE
+              </span>
               <span className="block mt-2 text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
                 Dealer-Level Precision.
               </span>
