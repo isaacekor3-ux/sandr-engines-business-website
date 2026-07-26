@@ -123,7 +123,8 @@ export default function Gallery() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-base text-body-text"
           >
-            Take a look inside our state-of-the-art diagnostic workshop where premium vehicles are analyzed and repaired by certified master technicians.
+            Take a look inside our S&R ENGINES & DIAGNOSTIC 
+SAFE AND RELIABLE workshop where premium vehicles are analyzed and repaired by certified master technicians.
           </motion.p>
         </div>
 

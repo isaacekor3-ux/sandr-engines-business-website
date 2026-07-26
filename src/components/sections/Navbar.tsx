@@ -192,7 +192,7 @@ export default function Navbar() {
             </div>
             <div>
               <span className="text-lg md:text-xl font-bold text-heading dark:text-white tracking-tight flex items-center">
-                S&R Engine
+                S&R Engines
                 <span className="text-secondary ml-1 font-extrabold">&</span>
               </span>
               <span className="text-[10px] uppercase tracking-widest text-body-text dark:text-slate-400 block -mt-1 font-semibold">
