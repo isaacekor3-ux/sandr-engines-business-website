@@ -196,12 +196,12 @@ function BookingForm() {
   };
 
   const serviceCategories = [
-    "Engine Diagnostics",
+    "Engines Diagnostics",
     "Mobile Diagnostics",
     "MOT Testing & Repairs",
     "Brake Service & Repairs",
     "Suspension & Steering Repairs",
-    "Engine Servicing & Maintenance",
+    "Engines Servicing & Maintenance",
     "Car Headlight Restoration and Polish",
     "Air-conditioning Regas and Service",
     "Tyre Repair",

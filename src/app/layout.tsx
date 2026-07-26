@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "S&R Engine & Diagnostics Ltd | Dealer-Level Car Diagnostics & Repair",
+  title: "S&R Engines & Diagnostics Ltd | Dealer-Level Car Diagnostics & Repair",
   description: "Professional car mechanics and advanced vehicle diagnostics. Specialist ECU coding, programming, electrical wiring repair, and quality mechanical services using OEM-grade diagnostic scanners.",
   keywords: "car diagnostics, engine tuning, ECU coding, auto mechanic, electrical wiring repair, fault code diagnostics, S&R Engine & Diagnostics",
 };

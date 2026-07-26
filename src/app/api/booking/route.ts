@@ -51,7 +51,7 @@ export async function POST(request: Request) {
             New S&R Booking Request
           </h1>
           <p style="margin: 4px 0 0 0; font-size: 14px; opacity: 0.9;">
-            S&R Engine & Diagnostics Ltd Website Submissions
+            S&R Engines & Diagnostics Ltd Website Submissions
           </p>
         </div>
 

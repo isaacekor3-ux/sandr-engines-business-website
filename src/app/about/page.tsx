@@ -106,7 +106,7 @@ export default function AboutPage() {
                 Standard garages frequently use code readers and simply swap components hoping to resolve issues, causing customers bloated diagnostic costs and repeated visits.
               </p>
               <p className="text-sm sm:text-base text-body-text leading-relaxed">
-                At S&R Engine & Diagnostics, we implement a strict scientific method. We analyze communication signals, verify physical parameters using digital oscilloscopes, and trace current drops across wiring looms. We change parts only when we have direct physical proof of component failure.
+                At S&R Engines & Diagnostics, we implement a strict scientific method. We analyze communication signals, verify physical parameters using digital oscilloscopes, and trace current drops across wiring looms. We change parts only when we have direct physical proof of component failure.
               </p>
 
               {/* Stats Counters Grid */}

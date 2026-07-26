@@ -29,7 +29,7 @@ export async function POST(request: Request) {
             New Contact Inquiry Received
           </h1>
           <p style="margin: 4px 0 0 0; font-size: 14px; opacity: 0.9;">
-            S&R Engine & Diagnostics Ltd Website Contact Form
+            S&R Engines & Diagnostics Ltd Website Contact Form
           </p>
         </div>
 

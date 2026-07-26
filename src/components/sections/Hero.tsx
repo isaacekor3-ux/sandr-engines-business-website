@@ -100,7 +100,7 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-heading dark:text-white tracking-tight leading-[1.1]"
             >
-              State-of-the-Art Diagnostics.
+              S&R ENGINES & DIAGNOSTIC SAFE AND RELIABLE
               <span className="block mt-2 text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
                 Dealer-Level Precision.
               </span>
