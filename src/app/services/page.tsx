@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Navbar from "@/components/sections/Navbar";
 import Footer from "@/components/sections/Footer";
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import {
@@ -280,6 +280,13 @@ export default function ServicesPage() {
                     >
                       {/* Image Header with scale effect */}
                       <div className="relative h-56 w-full overflow-hidden bg-slate-900">
+                        {/* Placeholder gradient to hold the space for client images */}
+                        <div className="absolute inset-0 bg-gradient-to-br from-slate-800 to-slate-950 flex items-center justify-center select-none">
+                          <span className="text-[11px] uppercase tracking-wider text-slate-500 font-semibold opacity-60">
+                            Service Image Placeholder
+                          </span>
+                        </div>
+                        {/*
                         <Image
                           src={service.image}
                           alt={service.title}
@@ -287,6 +294,7 @@ export default function ServicesPage() {
                           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                           className={`object-cover transition-transform duration-500 group-hover:scale-105 `}
                         />
+                        */}
                         <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-90" />
                         
                         {/* Floating Icon badge */}

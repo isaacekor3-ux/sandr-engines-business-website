@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import Image from "next/image";
+// import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { Maximize2, X, ChevronLeft, ChevronRight, Play } from "lucide-react";
 
@@ -140,6 +140,16 @@ SAFE AND RELIABLE workshop where premium vehicles are analyzed and repaired by c
               onClick={() => setActiveItemIndex(index)}
               className="group relative cursor-pointer aspect-[4/3] rounded-2xl overflow-hidden border border-border bg-slate-950 shadow-sm hover:shadow-xl transition-all duration-300"
             >
+              {/* Media Content Placeholder */}
+              <div className="absolute inset-0 bg-gradient-to-br from-slate-900 to-slate-950 flex flex-col items-center justify-center select-none text-slate-500 font-semibold uppercase tracking-wider text-xs p-4 text-center">
+                <span className="opacity-50">
+                  {item.type === "video" ? "Video Placeholder" : "Image Placeholder"}
+                </span>
+                <span className="text-[10px] text-slate-600 lowercase tracking-normal mt-1 block">
+                  {item.title}
+                </span>
+              </div>
+              {/*
               {item.type === "video" ? (
                 <div className="relative w-full h-full">
                   <video
@@ -150,7 +160,6 @@ SAFE AND RELIABLE workshop where premium vehicles are analyzed and repaired by c
                     playsInline
                     autoPlay
                   />
-                  {/* Overlay play indicator */}
                   <div className="absolute top-4 right-4 bg-secondary text-white p-1.5 rounded-full shadow-md z-20 flex items-center justify-center">
                     <Play className="w-3.5 h-3.5 fill-current" />
                   </div>
@@ -164,6 +173,7 @@ SAFE AND RELIABLE workshop where premium vehicles are analyzed and repaired by c
                   className="object-cover opacity-90 transition-transform duration-700 ease-out group-hover:scale-110"
                 />
               )}
+              */}
               
               {/* Elegant Hover Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5" />
@@ -242,6 +252,16 @@ SAFE AND RELIABLE workshop where premium vehicles are analyzed and repaired by c
               onClick={(e) => e.stopPropagation()}
               className="relative w-full max-w-4xl aspect-[4/3] max-h-[70vh] rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-black"
             >
+              {/* Media Content Placeholder in Lightbox */}
+              <div className="absolute inset-0 bg-gradient-to-br from-slate-950 to-slate-900 flex flex-col items-center justify-center select-none text-slate-400 font-semibold uppercase tracking-wider text-sm p-4 text-center">
+                <span className="opacity-60">
+                  {items[activeItemIndex].type === "video" ? "Video Placeholder" : "Image Placeholder"}
+                </span>
+                <span className="text-xs text-slate-500 lowercase tracking-normal mt-2 block">
+                  {items[activeItemIndex].title}
+                </span>
+              </div>
+              {/*
               {items[activeItemIndex].type === "video" ? (
                 <video
                   src={items[activeItemIndex].src}
@@ -258,6 +278,7 @@ SAFE AND RELIABLE workshop where premium vehicles are analyzed and repaired by c
                   className="object-contain"
                 />
               )}
+              */}
             </motion.div>
 
             {/* Text Overlay below Image */}
