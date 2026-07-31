@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-// import Image from "next/image";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { Maximize2, X, ChevronLeft, ChevronRight, Play } from "lucide-react";
 
@@ -10,64 +10,64 @@ export default function Gallery() {
 
   const items = [
     {
-      src: "/assets/gallery/gallery-1.jpeg",
+      src: "/assets/gallery/gallary-1.jpeg",
       type: "image",
       title: "Diagnostic Sweeps",
       category: "Electrical & Coding",
       description: "Using official factory diagnostic tooling to read live sensor data streams.",
     },
     {
-      src: "/assets/gallery/gallery-2.mp4",
-      type: "video",
+      src: "/assets/gallery/gallary-2.jpeg",
+      type: "image",
       title: "Live Telemetry Scan",
       category: "Real-time Testing",
       description: "Capturing dynamic ECU error logs during live vehicle replication.",
     },
     {
-      src: "/assets/gallery/gallery-3.jpeg",
+      src: "/assets/gallery/galllary-3.jpeg",
       type: "image",
       title: "Precision Engine Calibration",
       category: "Mechanical Diagnostics",
       description: "Root-cause diagnostics of fuel, air, and timing delivery systems.",
     },
     {
-      src: "/assets/gallery/gallery-4.jpeg",
+      src: "/assets/gallery/gallary-4.jpeg",
       type: "image",
       title: "Master Tech Component Fitment",
       category: "Guarantee Repair",
       description: "Fitting premium brand matching parts with precision calibration.",
     },
     {
-      src: "/assets/gallery/gallery-5.jpeg",
+      src: "/assets/gallery/gallary-5.jpeg",
       type: "image",
       title: "High-Voltage Battery Testing",
       category: "Hybrid & EV Sweep",
       description: "Measuring cell voltage stability on high-voltage hybrid components.",
     },
     {
-      src: "/assets/gallery/gallery-6.mp4",
-      type: "video",
+      src: "/assets/gallery/gallary-6.jpeg",
+      type: "image",
       title: "Oscilloscope Waveform Test",
       category: "Component Sweep",
       description: "Analyzing real-time sensor signals using a digital oscilloscope to trace wiring faults.",
     },
     {
-      src: "/assets/gallery/gallery-7.jpeg",
-      type: "image",
+      src: "/assets/gallery/gallary-7.mp4",
+      type: "video",
       title: "Precision Mechanical Overhaul",
       category: "Engine Repairs",
       description: "Complete mechanical breakdown and repair of complex block assemblies.",
     },
     {
-      src: "/assets/gallery/gallery-8.mp4",
-      type: "video",
+      src: "/assets/gallery/gallary-8.jpeg",
+      type: "image",
       title: "Exhaust Emission Analysis",
       category: "Diagnostics & MOT",
       description: "Measuring emission compound density to optimize combustion performance.",
     },
     {
-      src: "/assets/gallery/gallery-9.jpeg",
-      type: "image",
+      src: "/assets/gallery/gallary-9.mp4",
+      type: "video",
       title: "Chassis & Brake Alignment",
       category: "Safety Checks",
       description: "Laser aligning components for maximum road adherence and braking reliability.",
@@ -140,16 +140,6 @@ SAFE AND RELIABLE workshop where premium vehicles are analyzed and repaired by c
               onClick={() => setActiveItemIndex(index)}
               className="group relative cursor-pointer aspect-[4/3] rounded-2xl overflow-hidden border border-border bg-slate-950 shadow-sm hover:shadow-xl transition-all duration-300"
             >
-              {/* Media Content Placeholder */}
-              <div className="absolute inset-0 bg-gradient-to-br from-slate-900 to-slate-950 flex flex-col items-center justify-center select-none text-slate-500 font-semibold uppercase tracking-wider text-xs p-4 text-center">
-                <span className="opacity-50">
-                  {item.type === "video" ? "Video Placeholder" : "Image Placeholder"}
-                </span>
-                <span className="text-[10px] text-slate-600 lowercase tracking-normal mt-1 block">
-                  {item.title}
-                </span>
-              </div>
-              {/*
               {item.type === "video" ? (
                 <div className="relative w-full h-full">
                   <video
@@ -173,21 +163,12 @@ SAFE AND RELIABLE workshop where premium vehicles are analyzed and repaired by c
                   className="object-cover opacity-90 transition-transform duration-700 ease-out group-hover:scale-110"
                 />
               )}
-              */}
               
               {/* Elegant Hover Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5" />
 
-              {/* Hover Text Content */}
-              <div className="absolute bottom-0 left-0 right-0 p-5 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300 flex justify-between items-end z-10 pointer-events-none">
-                <div className="space-y-1">
-                  <span className="text-[10px] font-bold text-secondary uppercase tracking-wider block">
-                    {item.category}
-                  </span>
-                  <h3 className="text-base font-bold text-white leading-tight">
-                    {item.title}
-                  </h3>
-                </div>
+              {/* Hover Icon Overlay */}
+              <div className="absolute bottom-0 left-0 right-0 p-5 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300 flex justify-end items-end z-10 pointer-events-none">
                 <div className="w-8 h-8 rounded-lg bg-white/20 backdrop-blur-sm border border-white/20 flex items-center justify-center text-white flex-shrink-0">
                   {item.type === "video" ? (
                     <Play className="w-4 h-4 fill-current" />
@@ -196,11 +177,6 @@ SAFE AND RELIABLE workshop where premium vehicles are analyzed and repaired by c
                   )}
                 </div>
               </div>
-
-              {/* Static top-left label for context */}
-              <span className="absolute top-4 left-4 bg-black/60 backdrop-blur-md text-[10px] text-white/90 font-medium px-2.5 py-1 rounded-md border border-white/10 group-hover:opacity-0 transition-opacity duration-200">
-                {item.type === "video" ? "Video Scan" : item.category}
-              </span>
             </motion.div>
           ))}
         </div>
@@ -252,16 +228,6 @@ SAFE AND RELIABLE workshop where premium vehicles are analyzed and repaired by c
               onClick={(e) => e.stopPropagation()}
               className="relative w-full max-w-4xl aspect-[4/3] max-h-[70vh] rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-black"
             >
-              {/* Media Content Placeholder in Lightbox */}
-              <div className="absolute inset-0 bg-gradient-to-br from-slate-950 to-slate-900 flex flex-col items-center justify-center select-none text-slate-400 font-semibold uppercase tracking-wider text-sm p-4 text-center">
-                <span className="opacity-60">
-                  {items[activeItemIndex].type === "video" ? "Video Placeholder" : "Image Placeholder"}
-                </span>
-                <span className="text-xs text-slate-500 lowercase tracking-normal mt-2 block">
-                  {items[activeItemIndex].title}
-                </span>
-              </div>
-              {/*
               {items[activeItemIndex].type === "video" ? (
                 <video
                   src={items[activeItemIndex].src}
@@ -278,28 +244,9 @@ SAFE AND RELIABLE workshop where premium vehicles are analyzed and repaired by c
                   className="object-contain"
                 />
               )}
-              */}
             </motion.div>
 
-            {/* Text Overlay below Image */}
-            <motion.div
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              exit={{ y: 20, opacity: 0 }}
-              transition={{ delay: 0.1 }}
-              onClick={(e) => e.stopPropagation()}
-              className="text-center max-w-xl mt-6 space-y-2 z-10"
-            >
-              <span className="text-xs font-bold text-secondary uppercase tracking-widest">
-                {items[activeItemIndex].category}
-              </span>
-              <h3 className="text-xl sm:text-2xl font-bold text-white">
-                {items[activeItemIndex].title}
-              </h3>
-              <p className="text-sm text-slate-300 max-w-lg leading-relaxed">
-                {items[activeItemIndex].description}
-              </p>
-            </motion.div>
+            {/* Text Overlay below Image removed */}
           </motion.div>
         )}
       </AnimatePresence>
