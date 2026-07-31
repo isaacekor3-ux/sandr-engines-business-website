@@ -73,7 +73,7 @@ export default function ServicesPage() {
       title: "MOT Repairs",
       category: "Repairs & Tyres",
       icon: Hammer,
-      image: "/assets/services/mot_repairs.png",
+      image: "/assets/services/mot_repairs.jpeg",
       color: "from-amber-500/10 to-orange-500/10 text-amber-600 dark:text-amber-400",
       borderHover: "group-hover:border-amber-500/30",
       description: "If your vehicle fails its MOT, we provide fast, targeted repair solutions. From replacing worn suspension parts, correcting high emissions, to fixing electrical defects, we ensure your vehicle is returned to full compliance so it passes its re-test.",
