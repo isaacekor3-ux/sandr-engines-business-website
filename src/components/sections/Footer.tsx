@@ -72,6 +72,7 @@ export default function Footer() {
               {[
                 { name: "About", href: "/about" },
                 { name: "Service", href: "/services" },
+                { name: "Cars for Sale", href: "/car-sales" },
                 { name: "Contact", href: "/contact" },
                 { name: "Book Diagnostic", href: "/book" },
               ].map((link) => (
@@ -94,11 +95,11 @@ export default function Footer() {
             <ul className="space-y-2.5 text-sm">
               <li className="flex justify-between items-center py-1 border-b border-slate-800/40">
                 <span className="flex items-center gap-1.5"><Clock className="w-4 h-4 text-secondary" /> Mon - Fri</span>
-                <span className="font-semibold text-white">9:00 AM - 5:00 PM</span>
+                <span className="font-semibold text-white">9:00 AM - 5:30 PM</span>
               </li>
               <li className="flex justify-between items-center py-1 border-b border-slate-800/40">
                 <span className="flex items-center gap-1.5"><Clock className="w-4 h-4 text-secondary" /> Saturday</span>
-                <span className="font-semibold text-white">10:00 AM - 3:00 PM</span>
+                <span className="font-semibold text-white">9:00 AM - 3:00 PM</span>
               </li>
               <li className="flex justify-between items-center py-1">
                 <span className="flex items-center gap-1.5"><Clock className="w-4 h-4 text-slate-600" /> Sunday</span>

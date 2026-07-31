@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Navbar from "@/components/sections/Navbar";
 import Footer from "@/components/sections/Footer";
-// import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import {
@@ -42,7 +42,7 @@ export default function ServicesPage() {
       title: "Engine Diagnostics",
       category: "Diagnostics & Electrical",
       icon: Cpu,
-      image: "/assets/services/engines_diag.jpeg",
+      image: "/assets/services/engines_diagnostics.jpeg",
 
       color: "from-blue-500/10 to-indigo-500/10 text-blue-600 dark:text-blue-400",
       borderHover: "group-hover:border-blue-500/30",
@@ -63,7 +63,7 @@ export default function ServicesPage() {
       title: "MOT Testing",
       category: "Maintenance & Servicing",
       icon: ClipboardCheck,
-      image: "/assets/services/mot_testing.png",
+      image: "/assets/services/mot_testing.jpeg",
       color: "from-emerald-500/10 to-teal-500/10 text-emerald-600 dark:text-emerald-400",
       borderHover: "group-hover:border-emerald-500/30",
       description: "We carry out official, fully certified Ministry of Transport (MOT) safety inspections to check brake efficiency, exhaust emissions, lighting, steering, suspension, and overall roadworthiness. All tests are conducted strictly in accordance with DVSA regulations.",
@@ -83,7 +83,7 @@ export default function ServicesPage() {
       title: "Brake Service & Repairs",
       category: "Repairs & Tyres",
       icon: Disc,
-      image: "/assets/services/brake_repair.jpeg",
+      image: "/assets/services/brake_and_repair.jpeg",
       color: "from-rose-500/10 to-red-500/10 text-rose-600 dark:text-rose-400",
       borderHover: "group-hover:border-rose-500/30",
       description: "We replace worn brake pads and rotors (discs), flush system fluids, rebuild calipers, and adjust handbrakes. Using exclusively genuine OEM or matching high-grade components ensures responsive stopping power and prevents vibration or squeaking.",
@@ -93,7 +93,7 @@ export default function ServicesPage() {
       title: "Suspension & Steering Repairs",
       category: "Repairs & Tyres",
       icon: Settings,
-      image: "/assets/services/suspension_repairs.png",
+      image: "/assets/services/suspension_repair.jpeg",
       color: "from-violet-500/10 to-purple-500/10 text-violet-600 dark:text-violet-400",
       borderHover: "group-hover:border-violet-500/30",
       description: "Our technicians replace steering racks, ball joints, control arms, sway bars, wheel bearings, and shock absorbers. We restore structural stability, eliminate knocks or noises, and bring back tight, precise vehicle handling.",
@@ -103,7 +103,7 @@ export default function ServicesPage() {
       title: "Engine Servicing",
       category: "Maintenance & Servicing",
       icon: Wrench,
-      image: "/assets/services/engine_servicing.png",
+      image: "/assets/services/engine_servicing.jpeg",
       color: "from-blue-600/10 to-cyan-600/10 text-blue-600 dark:text-blue-400",
       borderHover: "group-hover:border-primary/30",
       description: "Comprehensive servicing packages tailored to manufacturer guidelines. We replace engine oil using premium synthetic oil, install new oil filters, cabin filters, air filters, and spark plugs, and perform a full visual and mechanical safety check.",
@@ -113,7 +113,7 @@ export default function ServicesPage() {
       title: "General Vehicle Repairs",
       category: "Repairs & Tyres",
       icon: Wrench,
-      image: "/assets/services/general_repairs.png",
+      image: "/assets/services/general_vehicle_repair.jpeg",
       color: "from-slate-500/10 to-slate-700/10 text-slate-700 dark:text-slate-300",
       borderHover: "group-hover:border-slate-500/30",
       description: "From fixing fluid leaks, replacing engine mounts, swapping auxiliary belts, to repairing windows and door locks, we cover all general mechanical repairs to keep your car operating safely and reliably.",
@@ -123,7 +123,7 @@ export default function ServicesPage() {
       title: "Vehicle Maintenance",
       category: "Maintenance & Servicing",
       icon: ShieldCheck,
-      image: "/assets/services/vehicle_maintenance.png",
+      image: "/assets/services/vehicle_maintainence.jpeg",
       color: "from-green-500/10 to-emerald-500/10 text-green-600 dark:text-green-400",
       borderHover: "group-hover:border-green-500/30",
       description: "Preventative multi-point inspections checking battery health, coolant level, steering fluid, and general wear items. Ideal for pre-travel checks to ensure your vehicle stays reliable and prevents unexpected roadside breakdowns.",
@@ -153,11 +153,21 @@ export default function ServicesPage() {
       title: "Tyre Repair",
       category: "Repairs & Tyres",
       icon: Wrench,
-      image: "/assets/services/tyre_repairs.png",
+      image: "/assets/services/tyre_repair.jpeg",
       color: "from-zinc-500/10 to-slate-500/10 text-zinc-600 dark:text-zinc-400",
       borderHover: "group-hover:border-zinc-500/30",
       description: "Safe and certified tyre puncture repairs in accordance with BS AU 159 standards. We inspect tread depth, repair minor tread punctures, perform wheel balancing, and adjust tyre pressures to optimize fuel economy and road safety.",
       highlights: ["BS AU 159 Compliant", "Precision Wheel Balancing", "Pressure & Tread Check"]
+    },
+    {
+      title: "Engine Replacement",
+      category: "Repairs & Tyres",
+      icon: Wrench,
+      image: "/assets/services/engine_replacement.jpeg",
+      color: "from-red-500/10 to-orange-500/10 text-red-600 dark:text-red-400",
+      borderHover: "group-hover:border-red-500/30",
+      description: "Complete engine replacement and rebuilding services. We source high-quality OEM or reconditioned engines, perform precise installations, map all electronic sensor arrays, and run full test cycles to restore your vehicle to factory performance.",
+      highlights: ["OEM & Reconditioned Engines", "Sensor & ECU Mapping", "Full Performance Test Cycle"]
     }
   ];
 
@@ -175,13 +185,13 @@ export default function ServicesPage() {
     <>
       <Navbar />
       <main className="flex-grow bg-background transition-colors duration-300">
-        
+
         {/* Hero Section */}
         <section className="relative pt-28 pb-12 bg-section overflow-hidden">
           {/* Subtle glowing elements */}
           <div className="absolute top-0 right-0 w-[40%] h-[40%] bg-gradient-to-b from-primary/5 to-transparent rounded-full blur-3xl pointer-events-none" />
           <div className="absolute bottom-0 left-0 w-[30%] h-[30%] bg-gradient-to-t from-secondary/5 to-transparent rounded-full blur-3xl pointer-events-none" />
-          
+
           <div className="max-w-7xl mx-auto px-4 md:px-2 relative z-10 text-center space-y-4">
             <motion.span
               initial={{ opacity: 0, y: 10 }}
@@ -191,7 +201,7 @@ export default function ServicesPage() {
             >
               Dealer-Grade Service
             </motion.span>
-            
+
             <motion.h1
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
@@ -203,7 +213,7 @@ export default function ServicesPage() {
                 Automotive Services
               </span>
             </motion.h1>
-            
+
             <motion.p
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
@@ -218,18 +228,17 @@ export default function ServicesPage() {
         {/* Filters and Search Bar Section */}
         <section className="py-6 max-w-7xl mx-auto px-4 md:px-2 border-b border-border/50">
           <div className="flex flex-col md:flex-row gap-4 items-center justify-between">
-            
+
             {/* Category selection */}
             <div className="flex flex-wrap gap-2 w-full md:w-auto justify-start">
               {categories.map((category) => (
                 <button
                   key={category}
                   onClick={() => setSelectedCategory(category)}
-                  className={`px-4 py-2 text-xs font-bold rounded-full border transition-all duration-300 cursor-pointer ${
-                    selectedCategory === category
+                  className={`px-4 py-2 text-xs font-bold rounded-full border transition-all duration-300 cursor-pointer ${selectedCategory === category
                       ? "bg-primary border-primary text-white shadow-sm shadow-primary/20"
                       : "bg-section border-border text-body-text hover:bg-background hover:text-heading"
-                  }`}
+                    }`}
                 >
                   {category}
                 </button>
@@ -279,24 +288,25 @@ export default function ServicesPage() {
                       className="group flex flex-col bg-card border border-border rounded-2xl overflow-hidden shadow-sm hover:shadow-lg hover:border-primary/20 transition-all duration-300 h-full"
                     >
                       {/* Image Header with scale effect */}
-                      <div className="relative h-56 w-full overflow-hidden bg-slate-900">
-                        {/* Placeholder gradient to hold the space for client images */}
-                        <div className="absolute inset-0 bg-gradient-to-br from-slate-800 to-slate-950 flex items-center justify-center select-none">
-                          <span className="text-[11px] uppercase tracking-wider text-slate-500 font-semibold opacity-60">
-                            Service Image Placeholder
-                          </span>
-                        </div>
-                        {/*
-                        <Image
-                          src={service.image}
-                          alt={service.title}
-                          fill
-                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                          className={`object-cover transition-transform duration-500 group-hover:scale-105 `}
-                        />
-                        */}
+                      <div className="relative h-96  w-full overflow-hidden bg-slate-900">
+                        {service.image.endsWith(".jpeg") ? (
+                          <Image
+                            src={service.image}
+                            alt={service.title}
+                            fill
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                            className="object-cover transition-transform duration-500 group-hover:scale-105"
+                          />
+                        ) : (
+                          /* Placeholder gradient to hold the space for client images */
+                          <div className="absolute inset-0 bg-gradient-to-br from-slate-800 to-slate-950 flex items-center justify-center select-none">
+                            <span className="text-[11px] uppercase tracking-wider text-slate-500 font-semibold opacity-60">
+                              Service Image Placeholder
+                            </span>
+                          </div>
+                        )}
                         <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-90" />
-                        
+
                         {/* Floating Icon badge */}
                         <div className={`absolute bottom-4 left-4 w-12 h-12 rounded-xl bg-gradient-to-br ${service.color} flex items-center justify-center shadow-lg backdrop-blur-sm border border-white/10`}>
                           <Icon className="w-6 h-6" />
@@ -313,7 +323,7 @@ export default function ServicesPage() {
                         <h3 className="text-xl font-bold text-heading dark:text-white leading-tight group-hover:text-primary transition-colors">
                           {service.title}
                         </h3>
-                        
+
                         <p className="text-sm text-body-text leading-relaxed flex-grow">
                           {service.description}
                         </p>
@@ -371,7 +381,7 @@ export default function ServicesPage() {
         {/* CTA Booking Section at the Bottom */}
         <section className="bg-section py-16 relative overflow-hidden">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[60%] h-[60%] bg-primary/5 rounded-full blur-3xl pointer-events-none" />
-          
+
           <div className="max-w-4xl mx-auto px-4 text-center space-y-8 relative z-10">
             <h2 className="text-3xl sm:text-4xl font-extrabold text-heading dark:text-white tracking-tight">
               Not Sure Which Service Your Vehicle Needs?

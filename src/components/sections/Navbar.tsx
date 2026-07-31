@@ -65,6 +65,8 @@ export default function Navbar() {
       setActiveSection("about");
     } else if (pathname === "/contact") {
       setActiveSection("contact");
+    } else if (pathname === "/car-sales") {
+      setActiveSection("car-sales");
     } else if (pathname === "/") {
       setActiveSection("hero");
     }
@@ -91,6 +93,7 @@ export default function Navbar() {
     { name: "Home", href: "/", id: "hero" },
     { name: "About", href: "/about", id: "about" },
     { name: "Service", href: "/services", id: "services" },
+    { name: "Cars for Sale", href: "/car-sales", id: "car-sales" },
     { name: "Contact", href: "/contact", id: "contact" },
   ];
 
