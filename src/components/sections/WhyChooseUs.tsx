@@ -55,7 +55,7 @@ export default function WhyChooseUs() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-3xl sm:text-4xl font-extrabold text-heading dark:text-white tracking-tight leading-tight"
             >
-              Why Car Owners Choose S&R Engine & Diagnostics
+              Why Car Owners Choose S&R Engines & Diagnostics
             </motion.h2>
             
             <motion.div

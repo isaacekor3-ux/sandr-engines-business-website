@@ -51,7 +51,7 @@ export default function Footer() {
               </div>
               <div>
                 <span className="text-lg md:text-xl font-bold text-white tracking-tight flex items-center">
-                  S&R Engine
+                  S&R Engines
                   <span className="text-secondary ml-1 font-extrabold">&</span>
                 </span>
                 <span className="text-[10px] uppercase tracking-widest text-slate-400 block -mt-1 font-semibold">
@@ -99,7 +99,7 @@ export default function Footer() {
               </li>
               <li className="flex justify-between items-center py-1 border-b border-slate-800/40">
                 <span className="flex items-center gap-1.5"><Clock className="w-4 h-4 text-secondary" /> Saturday</span>
-                <span className="font-semibold text-white">9:00 AM - 3:00 PM</span>
+                <span className="font-semibold text-white">9:30 AM - 3:00 PM</span>
               </li>
               <li className="flex justify-between items-center py-1">
                 <span className="flex items-center gap-1.5"><Clock className="w-4 h-4 text-slate-600" /> Sunday</span>
@@ -141,7 +141,7 @@ export default function Footer() {
 
         {/* Lower footer copyright */}
         <div className="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs">
-          <p>© {currentYear} S&R Engine & Diagnostics Ltd. All rights reserved.</p>
+          <p>© {currentYear} S&R Engines & Diagnostics Ltd. All rights reserved.</p>
           <div className="flex gap-6">
             <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
