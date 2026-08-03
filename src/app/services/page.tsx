@@ -133,7 +133,7 @@ export default function ServicesPage() {
       title: "Car Headlight Restoration and Polish",
       category: "Maintenance & Servicing",
       icon: Sparkles,
-      image: "/assets/services/headlight_polishing.png",
+      image: "/assets/services/car_headlight.jpeg",
       color: "from-yellow-500/10 to-amber-500/10 text-yellow-600 dark:text-yellow-400",
       borderHover: "group-hover:border-yellow-500/30",
       description: "Restore clarity and brightness to your vehicle's headlights. We remove oxidation, yellowing, and minor scratches using professional wet-sanding and multi-stage polishing, followed by a UV-resistant sealant to prevent future fading.",
